@@ -1,0 +1,481 @@
+body{
+  font-family: "Overpass", serif;
+ 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+.img-title img{
+   width: 30px;
+   padding-right: 10px;
+}
+.img-title{
+    display: flex;
+    align-items: center;
+}
+.img-title h1{
+    font-size: 30px;
+}
+.ulcontent{
+   list-style: none;
+   display: flex;
+   width: 600px;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.ulcontent li a{
+    display: inline-block; 
+    transition: transform 0.3s ease;
+    font-size: 15px;
+    color:rgb(83, 83, 83);
+    padding-bottom: 5px;
+}
+.navcontent{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+.navcontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:10px ;
+    box-shadow: 2px 0px 20px 4px grey;
+}
+.ulcontent li a:hover{
+    transform: scale(1.2);
+    border-radius: 1px;
+    color: black;
+    border-bottom: 3px solid rgb(33, 33, 188);
+}
+.ulcontent li a.active{
+    transform: scale(1.2);
+    border-radius: 1px;
+    color: black;
+    border-bottom: 3px solid rgb(33, 33, 188);
+}
+section{
+    scroll-margin-top: 100px;
+    scroll-behavior: smooth;
+}
+
+.circlebg{
+    position:relative;
+    display: inline-block;
+    left: 20px;
+    top: -30px;
+}
+.circlebg .myimage{
+    position: absolute;
+    border-bottom-right-radius: 31%;
+    border-bottom-left-radius: 24%; 
+    width: 450px;
+    height: 410px;
+    top: 50px;
+    left: 64px;
+    overflow: hidden;
+    align-items: center;
+}
+.myimage img{
+    border-radius: 40px;
+}
+.circlebg .bgimg{
+    display: inline-block;
+    width: 500px;
+    height: 460px;
+    overflow: hidden;
+}
+.titlecontent{
+    width: 30%;
+}
+.frontpage{
+    position: relative;
+    display: flex;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+}
+.imgh1bg img{
+    position:absolute;
+    top: 50px;
+    left: 80px;
+    opacity: 15%;
+    z-index: -2;
+}
+/* .........................Secound page ....................................*/
+.secoundpage{
+   display: flex;
+   justify-content: space-around;
+   position: relative;
+   width: 100%;
+   height: 600px;
+}
+.aboutcontent{
+    position: relative;
+    width: 40%;
+}
+.paracontent{
+    position: relative;
+    top: 8%;
+    width: 90%;
+    text-align:justify;
+}
+.ab-front{
+    font-size: 50px;
+}
+.ab-back{
+    position: absolute;
+    font-size: 120px;
+    top: 5px;
+    left: -10px;
+    opacity: 15%;
+}
+.aboutcontent table{
+  position: relative;
+   top: 15%;
+}
+.tablecontent tr,td{
+    padding:15px;
+}
+
+/* ................................................third page content .......................................*/
+.thirdpage{
+    position: relative;
+    width: 100%;
+   
+}
+.skillhead{
+    position: relative;
+    margin-top: 8%;
+}
+.thpagebg{
+    position:absolute;
+    left: 10%;
+    top: -40%;
+    opacity: 25%;
+    z-index: -99;
+}
+.sk-front{
+    font-size: 50px;
+    text-align: center;
+}
+.sk-back{
+    position: relative;
+    text-align: center;
+    top: -50px;
+    font-size: 120px;
+    opacity: 15%;
+}
+.sk-para{
+    position: relative;
+    top: -110px;
+    margin: 0px 20px 0px 20px;
+    text-align:center;
+    justify-items: center;
+}
+.sk-para p{
+    width: 60%;
+}
+.skill-content{
+
+    position: relative;
+    top: -90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skill-content div {
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-content: center;
+    justify-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+.skill-content div:hover{
+     transform: scale(1.1);
+}
+/*................................ forthpage ................................................*/
+.forthpage{
+   position: relative;
+   width: 100%;
+}
+.proheading{
+   position: relative;
+   text-align: center;
+}
+.proheading h2{
+    font-size: 50px;
+}
+.proheading h1{
+    position: relative;
+    font-size: 120px;
+    top: -70px;
+    opacity: 15%;
+}
+.proheading img{
+    position:absolute;
+    left: 15%;
+    top: -50%;
+    opacity: 25%;
+    z-index: -99;
+}
+.projectcontent div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+.projectcontent{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 30px;
+}
+.innercontent{
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    color:white;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background: rgba(0, 0, 0, 0.7);
+}
+.pro1{
+    position: relative;
+    width:350px;
+    height: 350px;
+    
+}
+.pro2{
+    position: relative;
+    width:600px;
+    height: 350px;
+    grid-column: 2/4;
+}
+.pro3{
+    position: relative;
+    width:350px;
+    height: 650px;
+    grid-row: 2/4;
+}
+.pro4{
+    position: relative;
+    width:600px;
+    height: 300px;
+    grid-column: 2/4;
+}
+.pro5{
+    position: relative;
+    width:600px;
+    height: 300px;
+}
+.pro6{
+    position: relative;
+    width:650px;
+    grid-column: 1/3;
+}
+.pro7{
+    position: relative;
+    width: 650px;
+    grid-column: 1/3;
+}
+.projectcontent div:hover .innercontent{
+    opacity: 1;
+}
+/*...................................................fifthpage...................................................... */
+.eduhead{
+    position: relative;
+    margin-top:10% ;
+}
+.eduhead h2{
+    text-align: center;
+    font-size: 50px;
+}
+.eduhead h1{
+    position: relative;
+    text-align: center;
+    font-size: 120px;
+    opacity: 15%;
+    top: -50px;
+}
+.ed-para{
+    position: relative;
+    top: -120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ed-para p{
+    width: 60%;
+    text-align: center;
+}
+.eduhead img{
+    position: absolute;
+    opacity: 50%;
+    left: 15%;
+    top: -70%;
+    z-index: -99;
+}
+.educontent{
+  display: flex;
+  
+  align-items: center;
+  justify-content:space-evenly;
+}
+
+.collegeedu{
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+.collegeedu h1{
+    font-size: 40px;
+}
+.collegeedu img{
+    float: left;
+    padding-right: 30px;
+}
+.collegeedu:hover{
+    transform: scale(1.1);
+}
+.college-content{
+    margin-top: 20px;
+}
+
+.schooledu{
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    transition: transform 0.5s ease-in-out;
+   
+}
+.schooledu img{
+    float: left;
+    padding-right: 30px;
+}
+.schooledu h1{
+    font-size: 40px;
+}
+.schooledu:hover{
+    transform: scale(1.1);
+}
+.internhead{
+    font-size: 40px;
+    margin: 30px;
+   text-align: center;
+}
+.intern-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+.intern1,.intern2,.intern3{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 15px 5px rgb(81, 81, 190);
+    transition: transform 0.5s ease-in-out;
+    
+}
+.intern1:hover,.intern2:hover,.intern3:hover{
+    box-shadow: 2px 2px 10px 5px rgb(81, 81, 190);
+    transform: scale(1.1);
+}
+/* .................................................................sixthpage........................................................ */
+.conhead{
+    position: relative;
+    margin-top: 10%;
+}
+.conhead h2{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+}
+.conhead h1{
+    text-align: center;
+    position: relative;
+    font-size: 120px;
+    opacity: 15%;
+    top: -60px;
+}
+.conhead img{
+    position: absolute;
+    opacity: 40%;
+    left: 20%;
+    top: -45%;
+    z-index: -99;
+}
+.con-para p{
+    width:50% ;
+    text-align:center;
+}
+.con-para{
+    position: relative;
+    top: -120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con-title{
+    font-size: 70px;
+    text-align: center;
+    margin: 60px;
+}
+.con-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.circle-tag{
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-on{
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+.link-on p{
+    transition: 0.5s ease-in-out;
+}
+.link-on:hover{
+    transform: scale(1.2);
+    
+}
+#p-tag{
+    margin: 10px;
+}
+.link-on:hover p{
+    border-bottom: 3px solid black;
+    border-radius: 3px;
+
+}

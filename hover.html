@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .underline-effect {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #000; /* Text color */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.underline-effect::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px; /* Adjust the distance of the underline */
+    width: 0;
+    height: 2px;
+    background-color: #007bff; /* Underline color */
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.underline-effect:hover::after {
+    width: 100%;
+}
+
+    </style>
+    <a href="#" class="underline-effect">Hover Me</a>
+
+</body>
+</html>
